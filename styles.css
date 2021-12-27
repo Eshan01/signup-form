@@ -15,9 +15,35 @@
 html{
     box-sizing: border-box;
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     background-image: url('./images/bg-intro-mobile.png');
     background-size:cover ;
     background-color: var(--Red);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 11vh 5vw;
+}
+header{
+    text-align: center;
+    color:white;
+}
+h1{
+    font-weight: 700;
+}
+.head_para{
+    font-weight:500;
+}
+.price_div{
+    background:var(--Blue);
+    padding:10px 50px;
+    border-radius: 10px;
+}
+main{
+    background:white;
+}
+input{
+    width:100%;
 }
