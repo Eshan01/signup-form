@@ -35,15 +35,51 @@ h1{
 }
 .head_para{
     font-weight:500;
+    margin: 25px 10px 60px;
 }
 .price_div{
     background:var(--Blue);
     padding:10px 50px;
     border-radius: 10px;
 }
+.price_div > span{
+    font-weight: 600;
+}
 main{
+    max-width: 100%;
+    margin:25px 0;
     background:white;
+    padding:15px;
+    border-radius: 10px;
+    text-align:center;
 }
 input{
+    width:90%;
+    border-radius: 5px;
+    height: 30px;
+    padding:10px;
+    margin:10px 0;
+}
+button{
     width:100%;
+    border-radius: 10px;
+    background: var(--Green);
+    color:white;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding:20px;
+}
+.disclaimer{
+    font-size:small;
+    margin:0 10px;
+    padding:10px 0;
+    color:var(--Grayish-Blue);
+    font-weight: 500;
+}
+::placeholder{
+    font-weight: 600;
+    color:var(--Dark-Blue);
+}
+.shadow{
+    box-shadow: 0 5px var(--Dark-Blue);
 }
