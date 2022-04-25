@@ -26,24 +26,28 @@
 <body>
   <header>
     <h1>Learn to code by watching others</h1>
-
     <p class="head_para">
       See how experienced developers solve problems in real-time. Watching
       scripted tutorials is great, but understanding how developers think is
       invaluable.
     </p>
-
-    <div class="price_div shadow"><span>Try it free 7 days</span> then $20/mo. thereafter</div>
   </header>
-  <main class="shadow">
-    <form action="">
-      <input type="text" name="firstName" id="fName" placeholder="First Name"/>
-      <input type="text" name="lastName" id="lName" placeholder="Last Name"/>
-      <input type="email" name="email" id="email" placeholder="Email Address"/>
-      <input type="password" name="password" id="pswrd" placeholder="Password"/>
-      <button class="btn">Claim your free trial</button>
-    </form>
-    <p class="disclaimer">By clicking the button, you are agreeing to our Terms and Services</p>
+  <main>
+    <div class="price_div shadow"><span>Try it free 7 days</span> then $20/mo. thereafter</div>
+    <div class="shadow">
+      <form action="">
+        <input type="text" name="firstName" id="fName" placeholder="First Name &#xF332;"/>
+        <p class="err">First Name cannot be empty</p>
+        <input type="text" name="lastName" id="lName" placeholder="Last Name"/>
+        <p class="err">Last Name cannot be empty</p>
+        <input type="email" name="email" id="email" placeholder="Email Address"/>
+        <p class="err">Looks like this is not an email</p>
+        <input type="password" name="password" id="pswrd" placeholder="Password"/>
+        <p class="err">Password cannot be empty</p>
+        <button class="btn" name="Submit" value="Submit">Claim your free trial</button>
+      </form>
+      <p class="disclaimer">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a> </p>
+    </div>
   </main>
   <footer>
     <p class="attribution">
