@@ -1,4 +1,4 @@
-// const para=document.querySelectorAll('.err');
+const para=document.querySelectorAll('.err');
 const form=document.querySelector('form');
 
 const regExp={
@@ -9,23 +9,25 @@ const regExp={
 };
 
 function Validate(field,regex){
-    if(regex.test(field)===false){
+    if(field===""){
+        field.nextElementSibling.classList.add('invalid');
         field.style.border='3px solid hsl(0, 100%, 74%)';
-        field.nextElementSibling.classList.add('valid');
-        field.attributes.placeholder.value=`&#xF332;`;
+    }
+    if(field==="email" && regex.test(field)===false){
+        field.style.border='3px solid hsl(0, 100%, 74%)';
+        field.nextElementSibling.textContent="Looks like this is not an email";
+        // field.attributes.placeholder.value=`&#xF332;`;
     }
 }
 
-form.addEventListener('keyup',event=>{
-    Validate(event.target,regExp[event.target.name]);
-});
 
 form.addEventListener('submit',event=>{
     event.preventDefault();
     console.log(event.target)
+    Validate();
 });
 
-window.onload= ()=> {
+onload= ()=> {
     document.querySelectorAll('input').forEach(input_field=>{
         input_field.value='';
     });

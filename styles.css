@@ -74,7 +74,7 @@ button{
 .err{
     display: none;
 }
-.valid{
+.invalid{
     display: block;
     text-align: right;
     color:var(--Red);
